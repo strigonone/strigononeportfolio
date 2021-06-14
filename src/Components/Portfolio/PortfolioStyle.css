@@ -1,11 +1,18 @@
 .portfolioContent {
-	background-color: #b2e4fa;
+	background-color: #ebf3f7;
 	display: flex;
 	flex-direction: column;
 	/* height: 90%; */
 	/* width: 100%; */
 	padding: 50px;
-	margin-left: 15%;
+
+	/* width: 100%; */
+}
+
+.portfolioContentText {
+	margin-left: 12%;
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 
 .dateLeft {
@@ -20,11 +27,14 @@
 	font-style: italic;
 	line-height: 30px;
 	border-right: 1px solid #999;
+	margin-left: 10%;
 }
 
 .mainPortfolioContainer {
 	display: flex;
-	flex-direction: row;
+	/* flex-direction: row; */
+	margin-bottom: 5%;
+	/* border-bottom: 1px solid #999; */
 }
 
 .mainPortfolioContents {

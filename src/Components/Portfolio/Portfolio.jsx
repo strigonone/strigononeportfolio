@@ -2,14 +2,18 @@ import React from "react";
 import SideBar from "../SideBar/SideBar";
 import "./PortfolioStyle.css";
 import StrigonOneFFXIVWebsite from "./StrigonOneFFXIVWebsite/StrigonOneFFXIVWebsite";
+import Typography from "@material-ui/core/Typography";
 
 const Portfolio = () => {
 	return (
 		<div>
 			<SideBar />
 			<div className="portfolioContent">
-				<h1>PORTFOLIO</h1>
-				<p>All work done by me</p>
+				<div className="portfolioContentText">
+					<Typography variant="h4">PORTFOLIO</Typography>
+					<Typography variant="subtitle1">All work done by me hahah</Typography>
+				</div>
+				<StrigonOneFFXIVWebsite />
 				<StrigonOneFFXIVWebsite />
 			</div>
 		</div>

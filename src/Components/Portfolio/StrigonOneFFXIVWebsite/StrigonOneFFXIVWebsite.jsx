@@ -1,45 +1,123 @@
 import React from "react";
 import "../PortfolioStyle.css";
 import StrigonWebsite from "../../../Images/strigonOneWebsite1080p.png";
+import Button from "@material-ui/core/Button";
+import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
+import Grid from "@material-ui/core/Grid";
+import Paper from "@material-ui/core/Paper";
+// import ButtonGroup from "@material-ui/core/ButtonGroup";
+
+const useStyles = makeStyles((theme: Theme) =>
+	createStyles({
+		root: {
+			flexGrow: 1,
+		},
+		paper: {
+			padding: theme.spacing(2),
+			// textAlign: "center",
+			marginLeft: "2%",
+		},
+		buttonStyle: {
+			background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
+			border: 0,
+			borderRadius: 5,
+			boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
+			color: "white",
+			height: 48,
+			padding: "0 30px",
+			marginTop: 10,
+			fontWeight: "bold",
+			textAlign: "center",
+		},
+		img: {
+			margin: "auto",
+			display: "block",
+			maxWidth: "100%",
+			maxHeight: "100%",
+		},
+	})
+);
 
 const StrigonOneFFXIVWebsite = () => {
+	const classes = useStyles();
+
 	return (
 		<div className="mainPortfolioContainer">
 			<div className="dateLeft">
 				<h3>Early 2021 - Ongoing</h3>
 			</div>
-			<div className="mainPortfolioContents">
-				<div className="mainPortfolioText">
-					<h1>Strigon One | FFXIV </h1>
-					<p>
-						Platform to host my 3D Mods to a popular MMORPG Game Final Fantasy
-						XIV
-					</p>
-					<h4>
-						A simple website that hosts and showcases my work, and also where I
-						obtained the name "Strigon One"
-					</h4>
-					<li>
-						A website for mod users to browse through my work as well and get in
-						touch with me
-					</li>
-					<li>My personal first step to the world of web development</li>
-					<li>Schedule for a major overhaul to use React and Typescript</li>
-					<a href="https://www.strigononeffxiv.com/">
-						<button className="portfolioButton">More Details</button>
-					</a>
-					<h4>Technologies Used</h4>
-					<div className="techUsed">
-						<li>3DS Max</li>
-						<li>WordPress</li>
-						<li>Elementor</li>
-						<li>Google Analytics</li>
-					</div>
-				</div>
-				<div className="mainPortfolioProjectImage">
-					<img src={StrigonWebsite} alt="strigonFFXIVWebsite" />
-				</div>
-			</div>
+			<Grid container spacing={2}>
+				<Grid item xs>
+					<Paper className={classes.paper}>
+						<h1>Strigon One | FFXIV </h1>
+						<p>
+							Platform to host my 3D Mods to a popular MMORPG Game Final Fantasy
+							XIV
+						</p>
+						<h4>
+							A simple website that hosts and showcases my work, and also where
+							I obtained the name "Strigon One"
+						</h4>
+						<li>
+							A website for mod users to browse through my work as well and get
+							in touch with me
+						</li>
+						<li>My personal first step to the world of web development</li>
+						<li>Schedule for a major overhaul to use React and Typescript</li>
+
+						<Button
+							className={classes.buttonStyle}
+							href="https://www.strigononeffxiv.com/"
+							variant="contained"
+						>
+							More Details
+						</Button>
+
+						<h4>Technologies Used</h4>
+						{/* <div className="techUsed"> */}
+						{/* <ButtonGroup> */}
+						<Button
+							className={classes.buttonStyle}
+							href="https://www.autodesk.co.nz/products/3ds-max/overview?term=1-YEAR"
+							variant="contained"
+						>
+							3DS Max
+						</Button>
+						<Button
+							className={classes.buttonStyle}
+							href="https://wordpress.com/"
+							variant="contained"
+						>
+							WordPress
+						</Button>
+						<Button
+							className={classes.buttonStyle}
+							href="https://elementor.com/"
+							variant="contained"
+						>
+							Elementor
+						</Button>
+						<Button
+							className={classes.buttonStyle}
+							href="https://analytics.google.com/analytics/web/provision/#/provision"
+							variant="contained"
+						>
+							Google Analytics
+						</Button>
+						{/* </ButtonGroup> */}
+						{/* </div> */}
+					</Paper>
+				</Grid>
+				<Grid item xs>
+					<Paper className={classes.paper}>
+						<img
+							src={StrigonWebsite}
+							alt="strigonFFXIVWebsite"
+							className={classes.img}
+						/>
+					</Paper>
+				</Grid>
+			</Grid>
 		</div>
 	);
 };
