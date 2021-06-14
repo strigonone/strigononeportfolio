@@ -1,5 +1,6 @@
 import React from "react";
 import "../PortfolioStyle.css";
+import { Link } from "react-router-dom";
 import StrigonWebsite from "../../../Images/strigonOneWebsite1080p.png";
 import Button from "@material-ui/core/Button";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
@@ -31,23 +32,27 @@ const useStyles = makeStyles((theme: Theme) =>
 			textAlign: "center",
 			marginLeft: 5,
 		},
-		buttonTechStyle: {
-			background: "linear-gradient(45deg, #43A0DC 30%, #2c4d92 90%)",
-			border: 0,
-			borderRadius: 5,
-			boxShadow: "0 3px 5px 2px rgba(35, 124, 135, .3)",
-			color: "white",
-			height: 48,
-			padding: "0 30px",
-			marginTop: 10,
-			fontWeight: "bold",
-			textAlign: "center",
-		},
+		// buttonTechStyle: {
+		// 	background: "linear-gradient(45deg, #43A0DC 30%, #2c4d92 90%)",
+		// 	border: 0,
+		// 	borderRadius: 5,
+		// 	boxShadow: "0 3px 5px 2px rgba(35, 124, 135, .3)",
+		// 	color: "white",
+		// 	height: 48,
+		// 	padding: "0 30px",
+		// 	marginTop: 10,
+		// 	fontWeight: "bold",
+		// 	textAlign: "center",
+		// },
 		img: {
 			margin: "auto",
 			display: "block",
 			maxWidth: "100%",
 			maxHeight: "100%",
+		},
+		link: {
+			textDecoration: "none",
+			color: theme.palette.text.primary,
 		},
 	})
 );
@@ -60,8 +65,9 @@ const StrigonOneFFXIVWebsite = () => {
 			<div className="dateLeft">
 				<Typography variant="subtitle2">2021 - Ongoing</Typography>
 			</div>
+
 			<Grid container spacing={2}>
-				<Grid item xs>
+				<Grid item md>
 					<Paper className={classes.paper}>
 						<h1>Strigon One | FFXIV </h1>
 						<p>
@@ -78,14 +84,14 @@ const StrigonOneFFXIVWebsite = () => {
 						</li>
 						<li>My personal first step to the world of web development</li>
 						<li>Schedule for a major overhaul to use React and Typescript</li>
-
-						<Button
-							className={classes.buttonStyle}
-							href="https://www.strigononeffxiv.com/"
-							variant="contained"
+						<Link
+							className={classes.link}
+							to="/StrigonOneFFXIVWebsiteMoreDetails"
 						>
-							More Details
-						</Button>
+							<Button className={classes.buttonStyle} variant="contained">
+								More Details
+							</Button>
+						</Link>
 
 						<h4>Technologies Used</h4>
 						{/* <div className="techUsed"> */}
@@ -122,7 +128,7 @@ const StrigonOneFFXIVWebsite = () => {
 						{/* </div> */}
 					</Paper>
 				</Grid>
-				<Grid item xs>
+				<Grid item lg>
 					<Paper className={classes.paper}>
 						<img
 							src={StrigonWebsite}

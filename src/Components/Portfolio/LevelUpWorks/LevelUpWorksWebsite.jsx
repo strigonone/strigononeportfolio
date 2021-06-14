@@ -61,7 +61,7 @@ const LevelUpWorksWebsite = () => {
 				<Typography variant="subtitle2">2021 March - 2021 April</Typography>
 			</div>
 			<Grid container spacing={2}>
-				<Grid item xs>
+				<Grid item md>
 					<Paper className={classes.paper}>
 						<h1>LevelUpWorks </h1>
 						<p>Introduction to kids programming</p>
@@ -112,7 +112,7 @@ const LevelUpWorksWebsite = () => {
 						{/* </div> */}
 					</Paper>
 				</Grid>
-				<Grid item xs>
+				<Grid item lg>
 					<Paper className={classes.paper}>
 						<img
 							src={LevelUpWorks}

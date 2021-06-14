@@ -132,7 +132,7 @@ export default function SideBar(props: Props) {
 			>
 				<Toolbar>
 					<IconButton
-						color="inherit"
+						color="black"
 						aria-label="open drawer"
 						edge="start"
 						onClick={handleDrawerToggle}
@@ -140,7 +140,7 @@ export default function SideBar(props: Props) {
 					>
 						<MenuIcon />
 					</IconButton>
-					<Typography variant="h6" noWrap>
+					<Typography variant="h6" noWrap style={{ color: "black" }}>
 						Johnny Chao | Strigon One
 					</Typography>
 				</Toolbar>
@@ -176,6 +176,7 @@ export default function SideBar(props: Props) {
 					</Drawer>
 				</Hidden>
 			</nav>
+			<div className={classes.toolbar} />
 		</div>
 	);
 }
