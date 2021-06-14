@@ -3,6 +3,7 @@ import SideBar from "../SideBar/SideBar";
 import "./PortfolioStyle.css";
 import StrigonOneFFXIVWebsite from "./StrigonOneFFXIVWebsite/StrigonOneFFXIVWebsite";
 import Typography from "@material-ui/core/Typography";
+import LevelUpWorksWebsite from "./LevelUpWorks/LevelUpWorksWebsite";
 
 const Portfolio = () => {
 	return (
@@ -11,9 +12,11 @@ const Portfolio = () => {
 			<div className="portfolioContent">
 				<div className="portfolioContentText">
 					<Typography variant="h4">PORTFOLIO</Typography>
-					<Typography variant="subtitle1">All work done by me hahah</Typography>
+					<Typography variant="subtitle1">
+						Majority of the work is done by me, unless stated team collaboration
+					</Typography>
 				</div>
-				<StrigonOneFFXIVWebsite />
+				<LevelUpWorksWebsite />
 				<StrigonOneFFXIVWebsite />
 			</div>
 		</div>

@@ -1,6 +1,6 @@
 import React from "react";
 import "../PortfolioStyle.css";
-import StrigonWebsite from "../../../Images/strigonOneWebsite1080p.png";
+import LevelUpWorks from "../../../Images/levelupWorksWebsite.png";
 import Button from "@material-ui/core/Button";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
@@ -52,32 +52,22 @@ const useStyles = makeStyles((theme: Theme) =>
 	})
 );
 
-const StrigonOneFFXIVWebsite = () => {
+const LevelUpWorksWebsite = () => {
 	const classes = useStyles();
 
 	return (
 		<div className="mainPortfolioContainer">
 			<div className="dateLeft">
-				<Typography variant="subtitle2">2021 - Ongoing</Typography>
+				<Typography variant="subtitle2">2021 March - 2021 April</Typography>
 			</div>
 			<Grid container spacing={2}>
 				<Grid item xs>
 					<Paper className={classes.paper}>
-						<h1>Strigon One | FFXIV </h1>
-						<p>
-							Platform to host my 3D Mods to a popular MMORPG Game Final Fantasy
-							XIV
-						</p>
-						<h4>
-							A simple website that hosts and showcases my work, and also where
-							I obtained the name "Strigon One"
-						</h4>
-						<li>
-							A website for mod users to browse through my work as well and get
-							in touch with me
-						</li>
-						<li>My personal first step to the world of web development</li>
-						<li>Schedule for a major overhaul to use React and Typescript</li>
+						<h1>LevelUpWorks </h1>
+						<p>Introduction to kids programming</p>
+						<h4>Mission Ready level 4 project.</h4>
+						<li>Simple full stack website project</li>
+						<li>Team project</li>
 
 						<Button
 							className={classes.buttonStyle}
@@ -92,31 +82,31 @@ const StrigonOneFFXIVWebsite = () => {
 						{/* <ButtonGroup> */}
 						<Button
 							className={classes.buttonStyle}
-							href="https://www.autodesk.co.nz/products/3ds-max/overview?term=1-YEAR"
+							href="https://reactjs.org/"
 							variant="contained"
 						>
-							3DS Max
+							React
 						</Button>
 						<Button
 							className={classes.buttonStyle}
-							href="https://wordpress.com/"
+							href="https://scalegrid.io/"
 							variant="contained"
 						>
-							WordPress
+							ScaleGrid
 						</Button>
 						<Button
 							className={classes.buttonStyle}
-							href="https://elementor.com/"
+							href="https://www.mysql.com/"
 							variant="contained"
 						>
-							Elementor
+							MySQL
 						</Button>
 						<Button
 							className={classes.buttonStyle}
-							href="https://analytics.google.com/analytics/web/provision/#/provision"
+							href="https://nodejs.org/en/"
 							variant="contained"
 						>
-							Google Analytics
+							Node JS
 						</Button>
 						{/* </ButtonGroup> */}
 						{/* </div> */}
@@ -125,8 +115,8 @@ const StrigonOneFFXIVWebsite = () => {
 				<Grid item xs>
 					<Paper className={classes.paper}>
 						<img
-							src={StrigonWebsite}
-							alt="strigonFFXIVWebsite"
+							src={LevelUpWorks}
+							alt="LevelUpWorksWebsite"
 							className={classes.img}
 						/>
 					</Paper>
@@ -136,4 +126,4 @@ const StrigonOneFFXIVWebsite = () => {
 	);
 };
 
-export default StrigonOneFFXIVWebsite;
+export default LevelUpWorksWebsite;

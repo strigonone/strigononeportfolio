@@ -24,6 +24,7 @@ import portfolioPic from "../../Images/portfolioPic.jpg";
 import "./SideBarStyle.css";
 import { Link } from "react-router-dom";
 import PermContactCalendarIcon from "@material-ui/icons/PermContactCalendar";
+import bf5wallpaper from "../../Images/battlefield5background.png";
 
 const drawerWidth = 240;
 
@@ -42,6 +43,7 @@ const useStyles = makeStyles((theme: Theme) =>
 			[theme.breakpoints.up("sm")]: {
 				width: `calc(100% - ${drawerWidth}px)`,
 				marginLeft: drawerWidth,
+				color: theme.palette.text.primary,
 			},
 		},
 		menuButton: {
@@ -120,7 +122,14 @@ export default function SideBar(props: Props) {
 	return (
 		<div className={classes.root}>
 			<CssBaseline />
-			<AppBar position="fixed" className={classes.appBar}>
+			<AppBar
+				position="fixed"
+				className={classes.appBar}
+				style={{
+					backgroundImage: `url(${bf5wallpaper})`,
+					backgroundSize: "Cover",
+				}}
+			>
 				<Toolbar>
 					<IconButton
 						color="inherit"
