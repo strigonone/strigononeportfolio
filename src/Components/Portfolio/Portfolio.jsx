@@ -4,11 +4,13 @@ import "./PortfolioStyle.css";
 import StrigonOneFFXIVWebsite from "./StrigonOneFFXIVWebsite/StrigonOneFFXIVWebsite";
 import Typography from "@material-ui/core/Typography";
 import LevelUpWorksWebsite from "./LevelUpWorks/LevelUpWorksWebsite";
+import ScrollToTop from "../ScrollToTopButton/ScrollToTop";
 
 const Portfolio = () => {
 	return (
 		<div>
 			<SideBar />
+			<ScrollToTop showBelow={250} />
 			<div className="portfolioContent">
 				<div className="portfolioContentText">
 					<Typography variant="h4">PORTFOLIO</Typography>

@@ -17,6 +17,7 @@ import Paper from "@material-ui/core/Paper";
 import Container from "@material-ui/core/Container";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Divider from "@material-ui/core/Divider";
+import ScrollToTop from "../../ScrollToTopButton/ScrollToTop";
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
@@ -75,6 +76,7 @@ const StrigonOneFFXIVWebsiteMoreDetails = () => {
 	return (
 		<div>
 			<SideBar />
+			<ScrollToTop showBelow={250} />
 			<CssBaseline />
 			<Container maxWidth="lg">
 				<Paper className={classes.paper}>
