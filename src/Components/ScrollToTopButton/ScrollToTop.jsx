@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 // import IconButton from "@material-ui/core/IconButton";
 import Fab from "@material-ui/core/Fab";
-import Zoom from "@material-ui/core/Zoom";
+import Grow from "@material-ui/core/Grow";
 
 const useStyles = makeStyles((theme) => ({
 	toTop: {
@@ -55,7 +55,11 @@ const ScrollToTop = ({ showBelow }) => {
 	return (
 		<div>
 			{show && (
-				<Zoom in={handleScroll}>
+				<Grow
+					in={handleScroll}
+					style={{ transformOrigin: "0 0 0" }}
+					{...(handleScroll ? { timeout: 1000 } : {})}
+				>
 					<Fab
 						color="secondary"
 						size="large"
@@ -66,7 +70,7 @@ const ScrollToTop = ({ showBelow }) => {
 					>
 						<ExpandLessIcon />
 					</Fab>
-				</Zoom>
+				</Grow>
 			)}
 		</div>
 	);
