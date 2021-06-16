@@ -1,5 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
+import LevelUpWorksWebsiteMoreDetails from "./Components/Portfolio/LevelUpWorks/LevelUpWorksWebsiteMoreDetails";
 // import SideBar from "./Components/SideBar/SideBar";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import StrigonOneFFXIVWebsiteMoreDetails from "./Components/Portfolio/StrigonOneFFXIVWebsite/StrigonOneFFXIVMoreDetails";
@@ -12,6 +13,11 @@ const Router = () => {
 				exact
 				path="/StrigonOneFFXIVWebsiteMoreDetails"
 				component={StrigonOneFFXIVWebsiteMoreDetails}
+			/>
+			<Route
+				exact
+				path="/LevelUpWorksWebsiteMoreDetails"
+				component={LevelUpWorksWebsiteMoreDetails}
 			/>
 		</Switch>
 	);

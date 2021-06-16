@@ -6,13 +6,16 @@ import Button from "@material-ui/core/Button";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
-import Typography from "@material-ui/core/Typography";
+import "@fontsource/advent-pro";
+
+// import Typography from "@material-ui/core/Typography";
 // import ButtonGroup from "@material-ui/core/ButtonGroup";
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
 		root: {
 			flexGrow: 1,
+			fontFamily: "Advent Pro",
 		},
 		paper: {
 			padding: theme.spacing(2),
@@ -31,6 +34,7 @@ const useStyles = makeStyles((theme: Theme) =>
 			fontWeight: "bold",
 			textAlign: "center",
 			marginLeft: 5,
+			fontFamily: "Advent Pro",
 		},
 		// buttonTechStyle: {
 		// 	background: "linear-gradient(45deg, #43A0DC 30%, #2c4d92 90%)",
@@ -53,6 +57,7 @@ const useStyles = makeStyles((theme: Theme) =>
 		link: {
 			textDecoration: "none",
 			color: theme.palette.text.primary,
+			fontFamily: "Advent Pro",
 		},
 	})
 );
@@ -62,14 +67,15 @@ const StrigonOneFFXIVWebsite = () => {
 
 	return (
 		<div className="mainPortfolioContainer">
-			<div className="dateLeft">
+			{/* <div className="dateLeft">
 				<Typography variant="subtitle2">2021 - Ongoing</Typography>
-			</div>
+			</div> */}
 
 			<Grid container spacing={2}>
 				<Grid item md>
 					<Paper className={classes.paper}>
 						<h1>Strigon One | FFXIV </h1>
+						<h5>Date: 2021 - Ongoing</h5>
 						<p>
 							Platform to host my 3D Mods to a popular MMORPG Game Final Fantasy
 							XIV

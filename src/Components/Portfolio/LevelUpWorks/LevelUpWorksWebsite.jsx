@@ -5,18 +5,20 @@ import Button from "@material-ui/core/Button";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
-import Typography from "@material-ui/core/Typography";
+// import Typography from "@material-ui/core/Typography";
 // import ButtonGroup from "@material-ui/core/ButtonGroup";
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
 		root: {
 			flexGrow: 1,
+			fontFamily: "Advent Pro",
 		},
 		paper: {
 			padding: theme.spacing(2),
 			// textAlign: "center",
 			marginLeft: "2%",
+			fontFamily: "Advent Pro",
 		},
 		buttonStyle: {
 			background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
@@ -30,6 +32,7 @@ const useStyles = makeStyles((theme: Theme) =>
 			fontWeight: "bold",
 			textAlign: "center",
 			marginLeft: 5,
+			fontFamily: "Advent Pro",
 		},
 		buttonTechStyle: {
 			background: "linear-gradient(45deg, #43A0DC 30%, #2c4d92 90%)",
@@ -57,13 +60,14 @@ const LevelUpWorksWebsite = () => {
 
 	return (
 		<div className="mainPortfolioContainer">
-			<div className="dateLeft">
+			{/* <div className="dateLeft">
 				<Typography variant="subtitle2">2021 March - 2021 April</Typography>
-			</div>
+			</div> */}
 			<Grid container spacing={2}>
 				<Grid item md>
 					<Paper className={classes.paper}>
 						<h1>LevelUpWorks </h1>
+						<h5>Date: 2021 March - April</h5>
 						<p>Introduction to kids programming</p>
 						<h4>Mission Ready level 4 project.</h4>
 						<li>Simple full stack website project</li>
@@ -71,8 +75,9 @@ const LevelUpWorksWebsite = () => {
 
 						<Button
 							className={classes.buttonStyle}
-							href="https://www.strigononeffxiv.com/"
+							href="LevelUpWorksWebsiteMoreDetails"
 							variant="contained"
+							// disabled={true}
 						>
 							More Details
 						</Button>

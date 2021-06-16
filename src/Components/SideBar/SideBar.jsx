@@ -25,6 +25,7 @@ import "./SideBarStyle.css";
 import { Link } from "react-router-dom";
 import PermContactCalendarIcon from "@material-ui/icons/PermContactCalendar";
 import bf5wallpaper from "../../Images/battlefield5background.png";
+import "@fontsource/advent-pro";
 
 const drawerWidth = 240;
 
@@ -32,11 +33,13 @@ const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
 		root: {
 			display: "flex",
+			fontFamily: "Advent Pro",
 		},
 		drawer: {
 			[theme.breakpoints.up("sm")]: {
 				width: drawerWidth,
 				flexShrink: 0,
+				fontFamily: "Advent Pro",
 			},
 		},
 		appBar: {
@@ -44,26 +47,31 @@ const useStyles = makeStyles((theme: Theme) =>
 				width: `calc(100% - ${drawerWidth}px)`,
 				marginLeft: drawerWidth,
 				color: theme.palette.text.primary,
+				fontFamily: "Advent Pro",
 			},
 		},
 		menuButton: {
 			marginRight: theme.spacing(2),
 			[theme.breakpoints.up("sm")]: {
 				display: "none",
+				fontFamily: "Advent Pro",
 			},
 		},
 		// necessary for content to be below app bar
 		toolbar: theme.mixins.toolbar,
 		drawerPaper: {
 			width: drawerWidth,
+			fontFamily: "Advent Pro",
 		},
 		content: {
 			flexGrow: 1,
 			padding: theme.spacing(3),
+			fontFamily: "Advent Pro",
 		},
 		link: {
 			textDecoration: "none",
 			color: theme.palette.text.primary,
+			fontFamily: "Advent Pro",
 		},
 	})
 );
@@ -83,8 +91,12 @@ export default function SideBar(props: Props) {
 			<div className={classes.toolbar} />
 			<div className="mainSideBarInnerCard">
 				<img src={portfolioPic} alt="PortfolioPic" />
-				<Typography variant="h5">Johnny Chao</Typography>
-				<Typography variant="caption">Junior Web developer</Typography>
+				<Typography variant="h5" style={{ fontFamily: "Advent Pro" }}>
+					Johnny Chao
+				</Typography>
+				<Typography variant="caption" style={{ fontFamily: "Advent Pro" }}>
+					Junior Web developer
+				</Typography>
 			</div>
 			<Divider />
 			<List>
@@ -140,7 +152,11 @@ export default function SideBar(props: Props) {
 					>
 						<MenuIcon />
 					</IconButton>
-					<Typography variant="h6" noWrap style={{ color: "black" }}>
+					<Typography
+						variant="h6"
+						noWrap
+						style={{ color: "black", fontFamily: "Advent Pro" }}
+					>
 						Johnny Chao | Strigon One
 					</Typography>
 				</Toolbar>
