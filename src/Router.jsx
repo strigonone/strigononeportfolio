@@ -16,7 +16,7 @@ const Router = () => {
 			/>
 			<Route
 				exact
-				path="/LevelUpWorksWebsiteMoreDetails"
+				path="/LevelUpWorksWebsileveteMoreDetails"
 				component={LevelUpWorksWebsiteMoreDetails}
 			/>
 		</Switch>

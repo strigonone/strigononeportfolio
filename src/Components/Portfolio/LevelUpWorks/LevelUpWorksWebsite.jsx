@@ -2,6 +2,7 @@ import React from "react";
 import "../PortfolioStyle.css";
 import LevelUpWorks from "../../../Images/levelupWorksWebsite.png";
 import Button from "@material-ui/core/Button";
+import { Link } from "react-router-dom";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
@@ -54,6 +55,11 @@ const useStyles = makeStyles((theme: Theme) =>
 			maxWidth: "100%",
 			maxHeight: "100%",
 		},
+		link: {
+			textDecoration: "none",
+			color: theme.palette.text.primary,
+			fontFamily: "Titillium Web",
+		},
 	})
 );
 
@@ -75,14 +81,14 @@ const LevelUpWorksWebsite = () => {
 						<li>Simple full stack website project</li>
 						<li>Team project</li>
 
-						<Button
-							className={classes.buttonStyle}
-							href="LevelUpWorksWebsiteMoreDetails"
-							variant="contained"
-							// disabled={true}
+						<Link
+							className={classes.link}
+							to="/LevelUpWorksWebsileveteMoreDetails"
 						>
-							More Details
-						</Button>
+							<Button className={classes.buttonStyle} variant="contained">
+								More Details
+							</Button>
+						</Link>
 
 						<Divider style={{ marginTop: "2%" }} />
 
