@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/strigononeportfolio/static/css/main.6d941b69.chunk.css",
-    "main.js": "/strigononeportfolio/static/js/main.a5d059a2.chunk.js",
-    "main.js.map": "/strigononeportfolio/static/js/main.a5d059a2.chunk.js.map",
+    "main.js": "/strigononeportfolio/static/js/main.c600a04a.chunk.js",
+    "main.js.map": "/strigononeportfolio/static/js/main.c600a04a.chunk.js.map",
     "runtime-main.js": "/strigononeportfolio/static/js/runtime-main.d7b31432.js",
     "runtime-main.js.map": "/strigononeportfolio/static/js/runtime-main.d7b31432.js.map",
     "static/css/2.f36b876f.chunk.css": "/strigononeportfolio/static/css/2.f36b876f.chunk.css",
-    "static/js/2.c3955884.chunk.js": "/strigononeportfolio/static/js/2.c3955884.chunk.js",
-    "static/js/2.c3955884.chunk.js.map": "/strigononeportfolio/static/js/2.c3955884.chunk.js.map",
+    "static/js/2.85b7c263.chunk.js": "/strigononeportfolio/static/js/2.85b7c263.chunk.js",
+    "static/js/2.85b7c263.chunk.js.map": "/strigononeportfolio/static/js/2.85b7c263.chunk.js.map",
     "static/js/3.302563bb.chunk.js": "/strigononeportfolio/static/js/3.302563bb.chunk.js",
     "static/js/3.302563bb.chunk.js.map": "/strigononeportfolio/static/js/3.302563bb.chunk.js.map",
     "index.html": "/strigononeportfolio/index.html",
     "static/css/2.f36b876f.chunk.css.map": "/strigononeportfolio/static/css/2.f36b876f.chunk.css.map",
     "static/css/main.6d941b69.chunk.css.map": "/strigononeportfolio/static/css/main.6d941b69.chunk.css.map",
-    "static/js/2.c3955884.chunk.js.LICENSE.txt": "/strigononeportfolio/static/js/2.c3955884.chunk.js.LICENSE.txt",
+    "static/js/2.85b7c263.chunk.js.LICENSE.txt": "/strigononeportfolio/static/js/2.85b7c263.chunk.js.LICENSE.txt",
     "static/media/MissionReadyDareToDevelop.4b795fd0.png": "/strigononeportfolio/static/media/MissionReadyDareToDevelop.4b795fd0.png",
     "static/media/index.css": "/strigononeportfolio/static/media/titillium-web-latin-ext-400-normal.b14344ef.woff2",
     "static/media/SideBarStyle.css": "/strigononeportfolio/static/media/animeCloudBirdBckground.39fb2710.png",
@@ -38,8 +38,8 @@
   "entrypoints": [
     "static/js/runtime-main.d7b31432.js",
     "static/css/2.f36b876f.chunk.css",
-    "static/js/2.c3955884.chunk.js",
+    "static/js/2.85b7c263.chunk.js",
     "static/css/main.6d941b69.chunk.css",
-    "static/js/main.a5d059a2.chunk.js"
+    "static/js/main.c600a04a.chunk.js"
   ]
 }
