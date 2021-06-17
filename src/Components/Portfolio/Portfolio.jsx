@@ -2,11 +2,13 @@ import React from "react";
 import SideBar from "../SideBar/SideBar";
 import "./PortfolioStyle.css";
 import StrigonOneFFXIVWebsite from "./StrigonOneFFXIVWebsite/StrigonOneFFXIVWebsite";
+import MadeleinePizzutiWebsite from "./MadeleinePizzutiWebsite/MadeleinePizzutiWebsite";
+import MissionReadyLvl5Projects from "./MissionReadyLvl5Projects/MissionReadyLvl5Projects";
 import Typography from "@material-ui/core/Typography";
 import LevelUpWorksWebsite from "./LevelUpWorks/LevelUpWorksWebsite";
 import ScrollToTop from "../ScrollToTopButton/ScrollToTop";
 import Container from "@material-ui/core/Container";
-import "@fontsource/advent-pro";
+import "@fontsource/titillium-web";
 
 const Portfolio = () => {
 	return (
@@ -16,13 +18,18 @@ const Portfolio = () => {
 			<Container maxWidth="lg">
 				{/* <div className="portfolioContent"> */}
 				<div className="portfolioContentText">
-					<Typography variant="h4" style={{ fontFamily: "Advent Pro" }}>
+					<Typography variant="h4" style={{ fontFamily: "Titillium Web" }}>
 						PORTFOLIO
 					</Typography>
-					<Typography variant="subtitle1" style={{ fontFamily: "Advent Pro" }}>
+					<Typography
+						variant="subtitle1"
+						style={{ fontFamily: "Titillium Web" }}
+					>
 						Majority of the work is done by me, unless stated team collaboration
 					</Typography>
 				</div>
+				<MissionReadyLvl5Projects />
+				<MadeleinePizzutiWebsite />
 				<LevelUpWorksWebsite />
 				<StrigonOneFFXIVWebsite />
 				{/* </div> */}

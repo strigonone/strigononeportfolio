@@ -18,13 +18,14 @@ import Container from "@material-ui/core/Container";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Divider from "@material-ui/core/Divider";
 import ScrollToTop from "../../ScrollToTopButton/ScrollToTop";
-import "@fontsource/advent-pro";
+import "@fontsource/titillium-web";
+import ReactPlayer from "react-player/youtube";
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
 		root: {
 			flexGrow: 1,
-			fontFamily: "Advent Pro",
+			fontFamily: "Titillium Web",
 		},
 		paper: {
 			padding: theme.spacing(3),
@@ -45,7 +46,7 @@ const useStyles = makeStyles((theme: Theme) =>
 			marginTop: 10,
 			fontWeight: "bold",
 			textAlign: "center",
-			fontFamily: "Advent Pro",
+			fontFamily: "Titillium Web",
 			marginLeft: 5,
 		},
 		// buttonTechStyle: {
@@ -90,7 +91,7 @@ const StrigonOneFFXIVWebsiteMoreDetails = () => {
 					</p>
 					<Typography
 						variant="subtitle2"
-						style={{ fontStyle: "italic", fontFamily: "advent-pro" }}
+						style={{ fontStyle: "italic", fontFamily: "Titillium Web" }}
 					>
 						Date: 2021 - Ongoing
 					</Typography>
@@ -103,7 +104,7 @@ const StrigonOneFFXIVWebsiteMoreDetails = () => {
 						touch with me
 					</li>
 					<li>
-						Schedule for a major overhaul to use <strong>React</strong> and
+						Schedule for a major overhaul to use <strong>React</strong> and{" "}
 						<strong>Typescript</strong>
 					</li>
 					<li>Over 200 mods ported by me</li>
@@ -215,6 +216,18 @@ const StrigonOneFFXIVWebsiteMoreDetails = () => {
 						alt="strigonFFXIVWebsiteAnalytics"
 						className={classes.img}
 					/>
+				</Paper>
+
+				<Paper className={classes.paper}>
+					<div className="player-wrapper">
+						<ReactPlayer
+							url="https://www.youtube.com/watch?v=j5vPF2JU8t0"
+							width="100%"
+							height="100%"
+							className="react-player"
+							controls={true}
+						/>
+					</div>
 				</Paper>
 			</Container>
 		</div>

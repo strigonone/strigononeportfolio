@@ -8,7 +8,7 @@ import LevelUpWorksTeacherDashPic from "../../../Images/levelupWorksTeacherDash.
 
 import LevelUpWorksTeacherProjectsPic from "../../../Images/levelupWorksTeacherProjects.png";
 import LevelUpWorksTeacherSignedUpPic from "../../../Images/levelupWorksTeachersigningupsuccessfully.png";
-import Strigonff14Lumina from "../../../Images/strigonOneff14Lumina.jpg";
+
 import { useHistory } from "react-router-dom";
 import Button from "@material-ui/core/Button";
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
@@ -18,14 +18,14 @@ import Container from "@material-ui/core/Container";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Divider from "@material-ui/core/Divider";
 import ScrollToTop from "../../ScrollToTopButton/ScrollToTop";
-import "@fontsource/advent-pro";
+import "@fontsource/titillium-web";
 import ReactPlayer from "react-player/youtube";
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
 		root: {
 			flexGrow: 1,
-			fontFamily: "Advent Pro",
+			fontFamily: "Titillium Web",
 		},
 		paper: {
 			padding: theme.spacing(3),
@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme: Theme) =>
 			marginTop: 10,
 			fontWeight: "bold",
 			textAlign: "center",
-			fontFamily: "Advent Pro",
+			fontFamily: "Titillium Web",
 			marginLeft: 5,
 		},
 		disabledButton: {
@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme: Theme) =>
 			marginTop: 10,
 			fontWeight: "bold",
 			textAlign: "center",
-			fontFamily: "Advent Pro",
+			fontFamily: "Titillium Web",
 			marginLeft: 5,
 		},
 		// buttonTechStyle: {
@@ -102,7 +102,7 @@ const LevelUpWorksWebsiteMoreDetails = () => {
 					<p>Introduction to kids programming</p>
 					<Typography
 						variant="subtitle2"
-						style={{ fontStyle: "italic", fontFamily: "advent-pro" }}
+						style={{ fontStyle: "italic", fontFamily: "Titillium Web" }}
 					>
 						Date: 2021 March - April
 					</Typography>
@@ -112,9 +112,8 @@ const LevelUpWorksWebsiteMoreDetails = () => {
 					<li>RAW CSS coding</li>
 					<li>DB hosted in ScaleGrid as well as being stored in MySQL</li>
 					<li>
-						Not only did I just help my fellow team mate, but I also helped
-						other people with their project as this was a project given to
-						everyone
+						Assisted other students with their project as well and was able to
+						provide meaningful feedback and guidence
 					</li>
 					<li>
 						Unfortantely our free{" "}
@@ -125,8 +124,8 @@ const LevelUpWorksWebsiteMoreDetails = () => {
 						. However I can show with whatever left over screenshots I have
 					</li>
 					<li>
-						Also have a video of my partner and I presenting this project
-						functioning, however sound quality is extremely bad
+						Video of my partner and I presenting this project functioning,
+						however sound quality is extremely bad
 					</li>
 
 					<h4>Technologies Used</h4>
@@ -220,11 +219,15 @@ const LevelUpWorksWebsiteMoreDetails = () => {
 					/>
 				</Paper>
 				<Paper className={classes.paper}>
-					<ReactPlayer
-						url="https://www.youtube.com/watch?v=j5vPF2JU8t0"
-						// width="100%"
-						// height="100%"
-					/>
+					<div className="player-wrapper">
+						<ReactPlayer
+							url="https://www.youtube.com/watch?v=p9n76GJmwUQ"
+							width="100%"
+							height="100%"
+							className="react-player"
+							controls={true}
+						/>
+					</div>
 				</Paper>
 			</Container>
 		</div>

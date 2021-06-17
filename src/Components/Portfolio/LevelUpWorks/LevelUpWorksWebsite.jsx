@@ -5,6 +5,8 @@ import Button from "@material-ui/core/Button";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
+import Divider from "@material-ui/core/Divider";
+import "@fontsource/titillium-web";
 // import Typography from "@material-ui/core/Typography";
 // import ButtonGroup from "@material-ui/core/ButtonGroup";
 
@@ -12,13 +14,13 @@ const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
 		root: {
 			flexGrow: 1,
-			fontFamily: "Advent Pro",
+			fontFamily: "Titillium Web",
 		},
 		paper: {
 			padding: theme.spacing(2),
 			// textAlign: "center",
 			marginLeft: "2%",
-			fontFamily: "Advent Pro",
+			fontFamily: "Titillium Web",
 		},
 		buttonStyle: {
 			background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
@@ -32,7 +34,7 @@ const useStyles = makeStyles((theme: Theme) =>
 			fontWeight: "bold",
 			textAlign: "center",
 			marginLeft: 5,
-			fontFamily: "Advent Pro",
+			fontFamily: "Titillium Web",
 		},
 		buttonTechStyle: {
 			background: "linear-gradient(45deg, #43A0DC 30%, #2c4d92 90%)",
@@ -81,6 +83,8 @@ const LevelUpWorksWebsite = () => {
 						>
 							More Details
 						</Button>
+
+						<Divider style={{ marginTop: "2%" }} />
 
 						<h4>Technologies Used</h4>
 						{/* <div className="techUsed"> */}

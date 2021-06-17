@@ -62,7 +62,7 @@ const ScrollToTop = ({ showBelow }) => {
 				>
 					<Fab
 						color="secondary"
-						size="large"
+						size="medium"
 						onClick={handleClick}
 						className={classes.toTop}
 						aria-label="to top"

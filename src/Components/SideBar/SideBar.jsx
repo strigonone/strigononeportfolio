@@ -25,7 +25,7 @@ import "./SideBarStyle.css";
 import { Link } from "react-router-dom";
 import PermContactCalendarIcon from "@material-ui/icons/PermContactCalendar";
 import bf5wallpaper from "../../Images/battlefield5background.png";
-import "@fontsource/advent-pro";
+import "@fontsource/titillium-web";
 
 const drawerWidth = 240;
 
@@ -33,45 +33,45 @@ const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
 		root: {
 			display: "flex",
-			fontFamily: "Advent Pro",
+			fontFamily: "Titillium Web",
 		},
 		drawer: {
 			[theme.breakpoints.up("sm")]: {
 				width: drawerWidth,
 				flexShrink: 0,
-				fontFamily: "Advent Pro",
+				fontFamily: "Titillium Web",
 			},
 		},
 		appBar: {
 			[theme.breakpoints.up("sm")]: {
 				width: `calc(100% - ${drawerWidth}px)`,
 				marginLeft: drawerWidth,
-				color: theme.palette.text.primary,
-				fontFamily: "Advent Pro",
+				fontFamily: "Titillium Web",
+				color: "secondary",
 			},
 		},
 		menuButton: {
 			marginRight: theme.spacing(2),
 			[theme.breakpoints.up("sm")]: {
 				display: "none",
-				fontFamily: "Advent Pro",
+				fontFamily: "Titillium Web",
 			},
 		},
 		// necessary for content to be below app bar
 		toolbar: theme.mixins.toolbar,
 		drawerPaper: {
 			width: drawerWidth,
-			fontFamily: "Advent Pro",
+			fontFamily: "Titillium Web",
 		},
 		content: {
 			flexGrow: 1,
 			padding: theme.spacing(3),
-			fontFamily: "Advent Pro",
+			fontFamily: "Titillium Web",
 		},
 		link: {
 			textDecoration: "none",
 			color: theme.palette.text.primary,
-			fontFamily: "Advent Pro",
+			fontFamily: "Titillium Web",
 		},
 	})
 );
@@ -91,10 +91,10 @@ export default function SideBar(props: Props) {
 			<div className={classes.toolbar} />
 			<div className="mainSideBarInnerCard">
 				<img src={portfolioPic} alt="PortfolioPic" />
-				<Typography variant="h5" style={{ fontFamily: "Advent Pro" }}>
+				<Typography variant="h5" style={{ fontFamily: "Titillium Web" }}>
 					Johnny Chao
 				</Typography>
-				<Typography variant="caption" style={{ fontFamily: "Advent Pro" }}>
+				<Typography variant="caption" style={{ fontFamily: "Titillium Web" }}>
 					Junior Web developer
 				</Typography>
 			</div>
@@ -136,6 +136,7 @@ export default function SideBar(props: Props) {
 			<CssBaseline />
 			<AppBar
 				position="fixed"
+				color="secondary"
 				className={classes.appBar}
 				style={{
 					backgroundImage: `url(${bf5wallpaper})`,
@@ -155,7 +156,7 @@ export default function SideBar(props: Props) {
 					<Typography
 						variant="h6"
 						noWrap
-						style={{ color: "black", fontFamily: "Advent Pro" }}
+						style={{ color: "black", fontFamily: "Titillium Web" }}
 					>
 						Johnny Chao | Strigon One
 					</Typography>
