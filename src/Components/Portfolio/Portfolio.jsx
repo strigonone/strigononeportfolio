@@ -9,6 +9,9 @@ import LevelUpWorksWebsite from "./LevelUpWorks/LevelUpWorksWebsite";
 import ScrollToTop from "../ScrollToTopButton/ScrollToTop";
 import Container from "@material-ui/core/Container";
 import "@fontsource/titillium-web";
+import KoFiWebsite from "./KoFi/KoFi";
+import AUTMasters from "./AUTMastersThesis/AUTMasters";
+import HyperVLab from "./HyperVLab/HyperVLab";
 
 const Portfolio = () => {
 	return (
@@ -28,6 +31,9 @@ const Portfolio = () => {
 						Majority of the work is done by me, unless stated team collaboration
 					</Typography>
 				</div>
+				<HyperVLab />
+				<AUTMasters />
+				<KoFiWebsite />
 				<MissionReadyLvl5Projects />
 				<MadeleinePizzutiWebsite />
 				<LevelUpWorksWebsite />

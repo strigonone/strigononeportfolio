@@ -1,7 +1,7 @@
 import React from "react";
 import "../PortfolioStyle.css";
 import { Link } from "react-router-dom";
-import StrigonWebsite from "../../../Images/strigonOneWebsite1080p.png";
+import KoFiWebsitePic from "../../../Images/KoFiWebsitePic.png";
 import Button from "@material-ui/core/Button";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme: Theme) =>
 	})
 );
 
-const StrigonOneFFXIVWebsite = () => {
+const KoFiWebsite = () => {
 	const classes = useStyles();
 
 	return (
@@ -75,25 +75,18 @@ const StrigonOneFFXIVWebsite = () => {
 			<Grid container spacing={2}>
 				<Grid item md>
 					<Paper className={classes.paper}>
-						<h1>Strigon One | FFXIV (Decomissioned)</h1>
-						<h5>Date: 2021</h5>
-						<p>
-							Platform to host my 3D Mods to a popular MMORPG Game Final Fantasy
-							XIV
-						</p>
+						<h1>Strigon One | FFXIV | KoFi </h1>
+						<h5>Date: 2020 - Ongoing</h5>
+
 						<h4>
-							A simple website that hosts and showcases my work, and also where
-							I obtained the name "Strigon One"
+							My KoFi Shop
 						</h4>
 						<li>
-							A website for mod users to browse through my work as well and get
-							in touch with me
+My shop that has made numerous sales off custom FFXIV Mods
 						</li>
-						<li>My personal first step to the world of web development</li>
-						<li>Schedule for a major overhaul to use React and Typescript</li>
 						<Link
 							className={classes.link}
-							to="/StrigonOneFFXIVWebsiteMoreDetails"
+							to="/KoFiMoreDetails"
 						>
 							<Button className={classes.buttonStyle} variant="contained">
 								More Details
@@ -112,27 +105,15 @@ const StrigonOneFFXIVWebsite = () => {
 						>
 							3DS Max
 						</Button>
-						<Button
+												<Button
 							className={classes.buttonStyle}
-							href="https://wordpress.com/"
+							href="https://ko-fi.com/strigonone"
 							variant="contained"
 						>
-							WordPress
+							KoFi
 						</Button>
-						<Button
-							className={classes.buttonStyle}
-							href="https://elementor.com/"
-							variant="contained"
-						>
-							Elementor
-						</Button>
-						<Button
-							className={classes.buttonStyle}
-							href="https://analytics.google.com/analytics/web/provision/#/provision"
-							variant="contained"
-						>
-							Google Analytics
-						</Button>
+
+
 						{/* </ButtonGroup> */}
 						{/* </div> */}
 					</Paper>
@@ -140,8 +121,8 @@ const StrigonOneFFXIVWebsite = () => {
 				<Grid item lg>
 					<Paper className={classes.paper}>
 						<img
-							src={StrigonWebsite}
-							alt="strigonFFXIVWebsite"
+							src={KoFiWebsitePic}
+							alt="KoFiWebsitePic"
 							className={classes.img}
 						/>
 					</Paper>
@@ -151,4 +132,4 @@ const StrigonOneFFXIVWebsite = () => {
 	);
 };
 
-export default StrigonOneFFXIVWebsite;
+export default KoFiWebsite;

@@ -1,7 +1,6 @@
 import React from "react";
 import "../PortfolioStyle.css";
-import { Link } from "react-router-dom";
-import StrigonWebsite from "../../../Images/strigonOneWebsite1080p.png";
+import AUTLogo from "../../../Images/AUTLogo.png";
 import Button from "@material-ui/core/Button";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
@@ -63,7 +62,7 @@ const useStyles = makeStyles((theme: Theme) =>
 	})
 );
 
-const StrigonOneFFXIVWebsite = () => {
+const AUTMasters= () => {
 	const classes = useStyles();
 
 	return (
@@ -75,30 +74,34 @@ const StrigonOneFFXIVWebsite = () => {
 			<Grid container spacing={2}>
 				<Grid item md>
 					<Paper className={classes.paper}>
-						<h1>Strigon One | FFXIV (Decomissioned)</h1>
-						<h5>Date: 2021</h5>
+						<h1>AUT Masters Thesis</h1>
+						<h5>Date: 2022 - 2023</h5>
 						<p>
-							Platform to host my 3D Mods to a popular MMORPG Game Final Fantasy
-							XIV
+							My Masters thesis on Automation Testing
 						</p>
 						<h4>
-							A simple website that hosts and showcases my work, and also where
-							I obtained the name "Strigon One"
+Thesis on automation testing tools dedicated to Mobile applications
 						</h4>
 						<li>
-							A website for mod users to browse through my work as well and get
-							in touch with me
+In development
 						</li>
-						<li>My personal first step to the world of web development</li>
-						<li>Schedule for a major overhaul to use React and Typescript</li>
-						<Link
+
+						{/* <Link
 							className={classes.link}
-							to="/StrigonOneFFXIVWebsiteMoreDetails"
+							to="/AUTMastersls"
 						>
 							<Button className={classes.buttonStyle} variant="contained">
 								More Details
 							</Button>
-						</Link>
+						</Link> */}
+						<Button
+							className={classes.disabledButton}
+							variant="contained"
+							disabled={true}
+						>
+							More Details
+						</Button>
+
 
 						<Divider style={{ marginTop: "2%" }} />
 
@@ -106,33 +109,27 @@ const StrigonOneFFXIVWebsite = () => {
 						{/* <div className="techUsed"> */}
 						{/* <ButtonGroup> */}
 						<Button
-							className={classes.buttonStyle}
-							href="https://www.autodesk.co.nz/products/3ds-max/overview?term=1-YEAR"
+							className={classes.disabledButton}
 							variant="contained"
+							disabled={true}
 						>
-							3DS Max
+							Null
 						</Button>
 						<Button
-							className={classes.buttonStyle}
-							href="https://wordpress.com/"
+							className={classes.disabledButton}
 							variant="contained"
+							disabled={true}
 						>
-							WordPress
+							Null
 						</Button>
 						<Button
-							className={classes.buttonStyle}
-							href="https://elementor.com/"
+							className={classes.disabledButton}
 							variant="contained"
+							disabled={true}
 						>
-							Elementor
+							Null
 						</Button>
-						<Button
-							className={classes.buttonStyle}
-							href="https://analytics.google.com/analytics/web/provision/#/provision"
-							variant="contained"
-						>
-							Google Analytics
-						</Button>
+
 						{/* </ButtonGroup> */}
 						{/* </div> */}
 					</Paper>
@@ -140,8 +137,8 @@ const StrigonOneFFXIVWebsite = () => {
 				<Grid item lg>
 					<Paper className={classes.paper}>
 						<img
-							src={StrigonWebsite}
-							alt="strigonFFXIVWebsite"
+							src={AUTLogo}
+							alt="AUTLogo"
 							className={classes.img}
 						/>
 					</Paper>
@@ -151,4 +148,4 @@ const StrigonOneFFXIVWebsite = () => {
 	);
 };
 
-export default StrigonOneFFXIVWebsite;
+export default AUTMasters
